@@ -7,6 +7,11 @@ body, html{
   }
 
 
+.headercontainer {
+    display:flex;
+    justify-content:center;
+    background-color:#1F2937;
+}
 .header {
     display:flex;
     gap:12px;
@@ -14,6 +19,7 @@ body, html{
     color:white;
     padding:12px 100px;
     align-items:center;
+    width:1200px;
 }
 .header>.headerlink>a{
     text-decoration:none;
@@ -30,15 +36,66 @@ body, html{
 .firstpanel {
     display:flex;
     justify-content:center;
+    padding:75px 100px;
+    background-color:#1F2937;
+    gap:35px;
 }
 .firstpaneltext {
     width:600px;
     display:flex;
     flex-flow:column nowrap;
+    color:white;
+    gap:12px;
+}
+.firstpaneltext .headtext {
+    font-size:48px;
+    margin-bottom:0;
+}
+.firstpaneltext .description {
+    font-size:18px;
+}
+.firstpaneltext button {
+    width:90px;
+    padding:10px 15px;
+    background-color:#3882F6;
+    color:white;
+    border:2px #3882F6;
+    border-radius:5px;
+    font-weight:700;
 }
 .firstpanelimage {
     width:600px;
     display:flex;
     justify-content:center;
     align-items:center;
+    color:white;
+    background-color:GRAY;
+}
+
+
+
+.secondpaneltext {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:36px;
+}
+.secondpanelcards {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+.cardbox {
+    border-style:solid;
+    border-width:8px;
+    border-color:purple;
+    border-radius:10px;
+}
+.cardbox img {
+    width:200px;
+    height:200px;
+    border-style:solid;
+    border-width:8px;
+    border-color:#3882F6;
+    border-radius:10px;
 }
