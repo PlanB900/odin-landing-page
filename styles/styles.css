@@ -4,6 +4,9 @@
 body, html{
     margin:0;
     padding:0;
+    display:flex;
+    flex-flow:column nowrap;
+
   }
 
 
@@ -11,6 +14,7 @@ body, html{
     display:flex;
     justify-content:center;
     background-color:#1F2937;
+    padding:15px 0;
 }
 .header {
     display:flex;
@@ -19,7 +23,7 @@ body, html{
     color:white;
     padding:12px 100px;
     align-items:center;
-    width:1200px;
+    width:1250px;
 }
 .header>.headerlink>a{
     text-decoration:none;
@@ -65,37 +69,141 @@ body, html{
 }
 .firstpanelimage {
     width:600px;
+    height:300px;
     display:flex;
     justify-content:center;
     align-items:center;
     color:white;
     background-color:GRAY;
+    flex-shrink:0;
+    flex-basis:auto;
 }
 
 
 
+.secondpanel{
+    background:white;
+    display:flex;
+    flex-flow:column nowrap;
+    padding-bottom:40px;
+}
 .secondpaneltext {
     display:flex;
     justify-content:center;
     align-items:center;
     font-size:36px;
+    background:white;
+    margin:50px 0;
 }
 .secondpanelcards {
     display:flex;
     flex-direction:row;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:65px;
+    gap:40px;
 }
-.cardbox {
-    border-style:solid;
-    border-width:8px;
-    border-color:purple;
-    border-radius:10px;
+.card {
+    display:flex;
+    justify-content:center;
+    flex-flow:column nowrap;
+    width:200px;
+}
+.cardbox{
+    display:flex;
+    justify-content:center;
+    text-align:center;
 }
 .cardbox img {
-    width:200px;
+    border-style:solid;
+    object-fit:fill;
+    border-width:5px;
+    border-radius:15px;
+    border-color:#3882F6;
+    width:180px;
+}
+.card div {
+    text-align:center;
+}
+
+
+
+.thirdpanel {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+}
+.quotebox {
+    display:flex;
+    flex-direction:column;
+    width:900px;
+    padding-top:120px;
+    padding-bottom:120px;
+}
+.quote {
+    font-size:36px;
+    font-style:italic;
+    color:#1F2937;
+}
+.quoteauthor {
+    align-self:flex-end;
+    font-size:22px;
+    font-weight:700;
+    color:#1F2937;
+}
+
+
+
+.fourthpanel {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:white;
+    padding:50px 0;
+}
+.signupbox {
+    display:flex;
+    flex-flow:row nowrap;
+    background-color:#3882F6;
+    justify-content:space-between;
+    align-items:center;
+    box-sizing:border-box;
+    padding:0px 60px;
+    width:900px;
     height:200px;
     border-style:solid;
-    border-width:8px;
-    border-color:#3882F6;
-    border-radius:10px;
+    border-width:0px;
+    border-radius:15px;
+    border-color:white;
+}
+.signupboxtext {
+    display:flex;
+    flex-flow:column nowrap;
+    color:white;
+}
+.signupboxtext .headtext {
+    font-weight:700;
+    font-size:22px;
+}
+.signupbox button {
+    background-color:#3882F6;
+    border-style:solid;
+    border-width:3px;
+    border-radius:5px;
+    border-color:white;
+    color:white;
+    font-weight:700;
+    padding:10px 14px;
+}
+
+
+
+.footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#1F2937;
+    color:white;
+    padding:40px 0;
 }
